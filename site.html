@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PCspecialist</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>PCspecialist</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Acasă</a></li>
+          <li><a href="#">Produse</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Contul meu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="produse">
+    <div class="container">
+      <h2>Produse</h2>
+      <div class="filtre">
+        <label for="sortare">Sortare:</label>
+        <select id="sortare">
+          <option value="pret-asc">Preț (ascendent)</option>
+          <option value="pret-desc">Preț (descendent)</option>
+          <option value="nume-asc">Nume (ascendent)</option>
+          <option value="nume-desc">Nume (descendent)</option>
+        </select>
+        <label for="filtrare">Filtrare:</label>
+        <input type="text" id="filtrare" placeholder="Caută...">
+      </div>
+      <div class="lista-produse">
+<div class="lista-produse">
+  <div class="produs">
+    <img src="produs1.jpg" alt="Produs 1">
+    <h3>Produs 1</h3>
+    <p>Descriere produs 1</p>
+    <p>Preț: $10</p>
+    <button class="adauga-cos">Adaugă în coș</button>
+  </div>
+  <div class="produs">
+    <img src="produs2.jpg" alt="Produs 2">
+    <h3>Produs 2</h3>
+    <p>Descriere produs 2</p>
+    <p>Preț: $15</p>
+    <button class="adauga-cos">Adaugă în coș</button>
+  </div>
+  <div class="produs">
+    <img src="produs3.jpg" alt="Produs 3">
+    <h3>Produs 3</h3>
+    <p>Descriere produs 3</p>
+    <p>Preț: $20</p>
+    <button class="adauga-cos">Adaugă în coș</button>
+  </div>
+</div>
+      </div>
+      <div class="paginare">
+        <button id="paginare-anterior">&lt; Anterior</button>
+        <button id="paginare-urmator">Următor &gt;</button>
+      </div>
+    </div>
+  </section>
+
+  <aside class="cos-de-cumparaturi">
+    <div class="container">
+      <h2>Coș de cumpărături</h2>
+      <ul id="lista-produse">
+        <!-- Produse adăugate dinamic vor apărea aici -->
+      </ul>
+      <p>Total: $<span id="total">0</span></p>
+      <button id="finalizare-comanda">Finalizare comandă</button>
+    </div>
+  </aside>
+
+  <div id="autentificare" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Autentificare</h2>
+      <form id="form-autentificare">
+        <input type="text" id="utilizator" placeholder="Nume utilizator">
+        <input type="password" id="parola" placeholder="Parolă">
+        <button type="submit">Autentificare</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="finalizare-comanda" class="modal">
+    <div class="modal-content">
+     
